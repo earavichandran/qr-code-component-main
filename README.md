@@ -6,6 +6,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -21,6 +22,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ![Desktop view](./screenshot1.jpg)
 ![Mobile view](./screenshot2.jpg)
 
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
 ## My process
 
 ### Built with
@@ -34,16 +40,24 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 From this project, I learned how fix the images in the parent container and flexbox properties to center the card. The style.css is given below:
 
 ```css
-body {
-  font-family: var(--ff-primary);
-  background-color: var(--bg-color);
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --bg-color: hsl(212, 45%, 89%);
+  --accent-color: hsl(0, 0%, 100%);
+  --primary-color: hsl(218, 44%, 22%);
+  --secondary-color: hsl(216, 15%, 48%);
+
+  --ff-primary: "Outfit", sans-serif;
+  --fw-regular: 700;
+  --fw-thin: 400;
+  --fs-regular: 15px;
+}
+
 body {
   font-family: var(--ff-primary);
   background-color: var(--bg-color);
